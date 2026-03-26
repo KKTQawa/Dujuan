@@ -1,0 +1,74 @@
+.archive_container{
+	width: 100%;
+	height: 100%;
+	background-color: #e2f0d7;
+	display:flex;
+	
+	padding: 24rpx;
+	overflow-y:auto
+}	
+
+
+.info {
+  margin-bottom: 16rpx;
+}
+
+.name {
+  font-size: 45rpx;
+  font-weight: bold;
+  margin-bottom: 8rpx;
+}
+
+.meta text {
+  display: block;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.date,
+.id {
+  font-size: 26rpx;
+  color: #888;
+  margin-bottom: 12rpx;
+}
+
+.qr {
+  margin: 24rpx 0;
+  display: flex;
+  justify-content: center;
+
+  image {
+    width: 300rpx;
+  }
+}
+
+.video video {
+  width: 100%;
+  border-radius: 12rpx;
+}
+
+.pic-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40rpx;
+  margin-top: 20rpx;
+}
+
+.pic-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.pic-item {
+  width: 100%;
+  height: 400rpx;
+  border-radius: 20rpx;
+}
+
+.pic-detail {
+  margin-top: 20rpx;
+  font-size: 26rpx;
+  line-height: 1.6;
+  white-space: pre-line;   /* ⭐ 关键：让 \n 生效 */
+  color: #444;
+}

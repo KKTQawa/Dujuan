@@ -1,0 +1,7 @@
+fastapi
+alibabacloud_dypnsapi20170525==2.0.0
+uvicorn
+httpx
+python-jose
+pymongo
+cryptography

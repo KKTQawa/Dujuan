@@ -1,0 +1,61 @@
+<script lang="uts" >
+
+	// #ifdef APP-ANDROID || APP-HARMONY
+	let firstBackTime = 0
+	// #endif
+	export default {
+		
+		onLaunch() {
+			console.log('App Launch')
+		//#ifndef MP-WEIXIN
+			uni.onTabBarMidButtonTap(() => {
+				uni.showToast({
+					title: 'add one',
+					position: 'bottom',
+				})
+			})
+		//#endif	
+		},
+		
+		onShow() {
+
+		},
+		onHide() {
+			console.log('App Hide')
+		},
+		// #ifdef APP-ANDROID || APP-HARMONY
+		onLastPageBackPress() {
+			console.log('App LastPageBackPress')
+			if (firstBackTime == 0) {
+				uni.showToast({
+					title: '再按一次退出应用',
+					position: 'bottom',
+				})
+				firstBackTime = Date.now()
+				setTimeout(() => {
+					firstBackTime = 0
+				}, 2000)
+			} else if (Date.now() - firstBackTime < 2000) {
+				firstBackTime = Date.now()
+				uni.exit()
+			}
+		},
+		// #endif
+		onExit() {
+			console.log('App Exit')
+		},
+	}
+</script>
+<style>
+@import "./components/myuan-vantUI/index.css";
+@import "./components/myuan-vantUI/iconfont.css";
+@import "./components/myuan-vantUI/yangshi.css";
+	/*每个页面公共css */
+	.uni-row {
+		flex-direction: row;
+	}
+
+	.uni-column {
+		flex-direction: column;
+	}
+</style>

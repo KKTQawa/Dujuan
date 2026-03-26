@@ -1,0 +1,45 @@
+.profile_class{
+	background-color: #e2f0d7;
+	position:relative;
+	height:100%;
+	display:flex;
+	flex-direction: column;
+}
+.pre-picture{
+    background-image: url("~@/static/images/profile_bg.jpg");
+    background-size: 100% 100%;    
+    height: 400rpx;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20rpx;
+	color:white;
+
+     .profile-image{
+        width: 200rpx;
+        height: 200rpx;
+        border-radius: 100%;
+        border: 5rpx solid #fff;
+        background-color: #fff;
+    }
+
+}
+
+.profile-container {
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+	flex-grow:true;
+  width:100%;
+}
+.profile-item {
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content:space-between; 
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+  font-size: 28rpx; 
+}

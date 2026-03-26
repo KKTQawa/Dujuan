@@ -1,0 +1,22 @@
+{
+  "name": "TingJianMuGuo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev:h5": "uni",
+    "build:h5": "uni build",
+    "dev:weapp": "uni -p mp-weixin",
+    "build:weapp": "uni build -p mp-weixin",
+    "dev:baidu": "uni -p mp-baidu",
+    "build:baidu": "uni build -p mp-baidu",
+    "dev:toutiao": "uni -p mp-toutiao",
+    "build:toutiao": "uni build -p mp-toutiao",
+    "dev:pay": "uni -p mp-alipay",
+    "build:pay": "uni build -p mp-alipay"
+  },
+  "dependencies": {
+    "js-base64": "^3.7.8",
+    "pinia": "^3.0.4",
+    "vue": "^3.4.0"
+  }
+}

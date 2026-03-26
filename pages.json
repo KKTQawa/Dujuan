@@ -1,0 +1,102 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://doc.dcloud.net.cn/uni-app-x/collocation/pagesjson.html
+		{
+			"path": "pages/archive/archive",
+			"style": {
+				"navigationBarTitleText": "档案",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/map/map",
+			"style": {
+				"navigationBarTitleText": "地图",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "pages/profile/profile",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/archiveDetail/archiveDetail",
+			"style": {
+				"navigationBarTitleText": " "
+			}
+		},
+		{
+			"path": "pages/roam/roam",
+			"style": {
+				"navigationBarTitleText": "漫游"
+			}
+		},
+		{
+			"path": "pages/webview/webview",
+			"style": {
+				"navigationBarTitleText": " "
+			}
+		}
+],
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"uni-ui": "@/uni_modules/uni-$1/components/uni-$1/uni-$1.vue",
+		"^van-(.*)": "@/components/myuan-vantUI/$1.vue"
+		}
+	},
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "听见木果",
+		"navigationBarBackgroundColor": "#add191",
+		
+		"backgroundColor": "#faf6ed"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"list": [
+			{
+				"pagePath": "pages/archive/archive",
+				"text": "档案",
+				"iconPath": "static/images/archive.png",
+				"selectedIconPath": "static/images/archive2.png"
+			},
+			{
+				"pagePath": "pages/map/map",
+				"text": "地图",
+				"iconPath": "static/images/map.png",
+				"selectedIconPath": "static/images/map2.png"
+			},
+			{
+				"pagePath": "pages/roam/roam",
+				"text": "漫游",
+				"iconPath": "static/images/roam.png",
+				"selectedIconPath": "static/images/roam2.png"
+			},
+			{
+				"pagePath": "pages/profile/profile",
+				"text": "我的",
+				"iconPath": "static/images/user.png",
+				"selectedIconPath": "static/images/user2.png"
+			}
+		],
+
+		"midButton":{
+			"iconPath": "static/images/add.png"
+		},
+
+		"color": "black",
+		"selectedColor": "#d81e06",
+		"backgroundColor": "#add191"
+	}
+}
