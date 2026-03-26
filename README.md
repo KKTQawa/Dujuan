@@ -26,10 +26,13 @@
 
 ## 效果预览
 
-<img src="resources/archieve.jpg" width="22%">
-<img src="resources/map.jpg" width="22%">
-<img src="resources/roam.jpg" width="22%">
-<img src="resources/profile.jpg" width="22%">
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="resources/archieve.jpg" width="22%">
+  <img src="resources/map.jpg" width="22%">
+  <img src="resources/roam.jpg" width="22%">
+  <img src="resources/profile.jpg" width="22%">
+</div>
 
 ## 环境配置
 
@@ -42,7 +45,7 @@ npm run dev
 
 ### 移动端 (React Native)
 
-- [App 移动端](./app/README.md)
+- [App 移动端](./app/)
 
 ```bash
 cd app
@@ -52,7 +55,7 @@ npx react-native run-android
 
 ### 后端
 
-- [Server 后端](./server/README.md)
+- [Server 后端](./server/)
 
 ```bash
 cd server
